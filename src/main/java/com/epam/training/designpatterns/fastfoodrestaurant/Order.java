@@ -8,6 +8,10 @@ public class Order {
         this.mainDish = mainDish;
     }
 
+    public Product getMainDish() {
+        return mainDish;
+    }
+
     @Override
     public String toString() {
         return "Order [mainDish=" + mainDish + "]";

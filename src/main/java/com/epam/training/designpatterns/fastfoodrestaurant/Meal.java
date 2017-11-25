@@ -2,13 +2,15 @@ package com.epam.training.designpatterns.fastfoodrestaurant;
 
 public class Meal {
 
-    String orderName;
+    Product product;
 
-    public Meal(String orderName) {
-        this.orderName = orderName;
+    public Meal(Product product) {
+        this.product = product;
     }
 
-    public String getMockMeal() {
-        return orderName + " meal";
+    @Override
+    public String toString() {
+        return "Meal [product=" + product + "]";
     }
+
 }

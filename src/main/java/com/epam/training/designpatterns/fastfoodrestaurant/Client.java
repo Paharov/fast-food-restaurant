@@ -13,8 +13,12 @@ public class Client {
 
     public void putOrder(Order order) {
         if (order != null) {
-            robot.recordOrder(order);
+            robot.recordOrder(this, order);
         }
+    }
+
+    public void acceptMeal(Meal meal) {
+        System.out.println(meal + " for client " + id);
     }
 
     public long getId() {

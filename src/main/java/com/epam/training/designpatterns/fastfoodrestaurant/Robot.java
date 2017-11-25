@@ -2,13 +2,16 @@ package com.epam.training.designpatterns.fastfoodrestaurant;
 
 public class Robot {
 
-    public void recordOrder(Order order) {
-        prepareMeal(order);
+    public void recordOrder(Client client, Order order) {
+        prepareMeal(client, order);
     }
 
-    public void prepareMeal(Order order) {
+    private void prepareMeal(Client client, Order order) {
+        Meal meal = new Meal(order.getMainDish());
+        serveMeal(client, meal);
     }
 
-    public void serveMeal(Meal meal) {
+    private void serveMeal(Client client, Meal meal) {
+        client.acceptMeal(meal);
     }
 }
