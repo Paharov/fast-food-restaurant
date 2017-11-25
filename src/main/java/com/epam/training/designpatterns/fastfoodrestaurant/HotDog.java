@@ -8,4 +8,9 @@ public class HotDog implements Product {
         return oldHappiness + HOTDOG_INCREMENT;
     }
 
+    @Override
+    public String toString() {
+        return "HotDog";
+    }
+
 }

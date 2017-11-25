@@ -7,10 +7,8 @@ public class Robot {
     }
 
     public void prepareMeal(Order order) {
-        serveMeal(new Meal(order.getName()));
     }
 
     public void serveMeal(Meal meal) {
-        System.out.println(meal.getMockMeal());
     }
 }

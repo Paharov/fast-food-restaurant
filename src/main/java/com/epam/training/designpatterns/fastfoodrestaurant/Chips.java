@@ -9,4 +9,9 @@ public class Chips implements Product {
         return oldHappiness + fivePercent;
     }
 
+    @Override
+    public String toString() {
+        return "Chips";
+    }
+
 }
