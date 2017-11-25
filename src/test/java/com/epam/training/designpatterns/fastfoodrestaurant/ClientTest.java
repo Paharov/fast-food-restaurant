@@ -4,9 +4,9 @@ import org.junit.Test;
 
 public class ClientTest {
 
-	@Test
-	public void test() {
-		// Not yet implemented
-	}
+    @Test
+    public void test() {
+        // Not yet implemented
+    }
 
 }
